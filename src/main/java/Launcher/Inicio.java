@@ -1,10 +1,11 @@
 package Launcher;
 
+import Vista.Consola;
+
 public class Inicio {
 
     public static void main(String[] args) {
-        MiCalendario calendario = new MiCalendario();
-        calendario.mostrarFechaYHora();
+        Consola consola = new Consola();
+        consola.mostrarFechaHora();
     }
-
 }

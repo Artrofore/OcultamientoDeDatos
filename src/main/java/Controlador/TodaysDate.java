@@ -1,27 +1,24 @@
 package Controlador;
 
-import java.util.GregorianCalendar;
-import java.util.Calendar;
-import static java.lang.System.out;
+import Modelo.MiCalendario;
 
 public class TodaysDate {
-    // Member variables
+
+
     String time;
     public int day;
     private int month;
     protected int year;
 
-    // Methods
-    public void printDateAndTime(){
-        GregorianCalendar calendar = new GregorianCalendar();
-        time = calendar.get(Calendar.HOUR_OF_DAY) + ":"
-                + calendar.get(Calendar.MINUTE) + ":"
-                + calendar.get(Calendar.SECOND);
-        day = calendar.get(Calendar.DATE);
-        month = calendar.get(Calendar.MONTH) + 1;
-        year = calendar.get(Calendar.YEAR);
 
-        out.println("Time: " + time);
-        out.println("Date: " + month + "/" + day + "/" + year);
+    public void printDateAndTime() {
+        MiCalendario calendario = new MiCalendario();
+        time = calendario.obtenerHora() + ":" + calendario.obtenerMinuto() + ":" + calendario.obtenerSegundo();
+        day = calendario.obtenerDia();
+        month = calendario.obtenerMes();
+        year = calendario.obtenerAnio();
+
+        System.out.println("Hora: " + time);
+        System.out.println("Fecha: " + day + "/" + month + "/" + year);
     }
 }
