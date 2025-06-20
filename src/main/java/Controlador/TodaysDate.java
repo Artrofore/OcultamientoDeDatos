@@ -6,7 +6,7 @@ public class TodaysDate {
 
 
     String time;
-    public int day;
+    private int day;
     private int month;
     protected int year;
 
