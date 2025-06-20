@@ -1,12 +1,17 @@
-import MiCalendar;
+package Controlador;
+
+import java.util.GregorianCalendar;
+import java.util.Calendar;
+import static java.lang.System.out;
+
 public class TodaysDate {
-    //member variables
+    // Member variables
     String time;
     public int day;
     private int month;
     protected int year;
 
-    //methods
+    // Methods
     public void printDateAndTime(){
         GregorianCalendar calendar = new GregorianCalendar();
         time = calendar.get(Calendar.HOUR_OF_DAY) + ":"
@@ -17,7 +22,6 @@ public class TodaysDate {
         year = calendar.get(Calendar.YEAR);
 
         out.println("Time: " + time);
-        out.println("Date: " + month + " " + day + " " + year);
+        out.println("Date: " + month + "/" + day + "/" + year);
     }
 }
-//aa
