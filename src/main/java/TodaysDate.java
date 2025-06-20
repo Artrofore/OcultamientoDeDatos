@@ -19,4 +19,3 @@ public class TodaysDate {
         out.println("Date: " + month + " " + day + " " + year);
     }
 }
-//a
