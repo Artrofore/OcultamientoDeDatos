@@ -1,3 +1,4 @@
+import MiCalendar;
 public class TodaysDate {
     //member variables
     String time;
